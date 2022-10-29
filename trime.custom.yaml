@@ -1,3 +1,15 @@
 # trime.custom.yaml
 patch:
-  "preset_keyboards/luna_pinyin/import_preset": qwerty0 #预设36键布局的ID是qwerty0
+  # 1、让朙月拼音使用36键键盘布局
+  "preset_keyboards/luna_pinyin/import_preset": qwerty0
+
+  # 2、给36键键盘添加方向键和删词键
+  "preset_keyboards/qwerty0/keys/@7/has_menu": Left
+  "preset_keyboards/qwerty0/keys/@8/has_menu": Right
+  "preset_keyboards/qwerty0/keys/@9/has_menu": DeleteCandidate
+  
+  "style/locale": zh_CN # 添加为汉语简体
+  "style/show_preview": false #按鍵提示
+  "style/show_comment": false #顯示提示區
+  "style/key_sound": false
+  "style/color_scheme": lost_temple
